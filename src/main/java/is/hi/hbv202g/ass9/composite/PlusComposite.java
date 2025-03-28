@@ -1,23 +1,27 @@
 package is.hi.hbv202g.ass9.composite;
 
-public class PlusComposite implements MathExpression {
-    private MathExpression[] children = new MathExpression[0];
+import java.util.ArrayList;
+import java.util.List;
 
-    public void add(MathExpression mathExpression) {
-        MathExpression[] newChildren = new MathExpression[this.children.length + 1];
-        for (int i = 0; i < this.children.length; i++) {
-            newChildren[i] = this.children[i];
-        }
-        newChildren[this.children.length] = mathExpression;
-        this.children = newChildren;
+public class PlusComposite implements MathExpression {
+    private List<MathExpression> children;
+
+    public PlusComposite() {
+        children = new ArrayList<>();
     }
 
+    // Add a child to the composite expression
+    public void add(MathExpression expression) {
+        children.add(expression);
+    }
+
+    @Override
     public int getResult() {
-        int result = 0;
-        for (MathExpression child : this.children) {
-            result += child.getResult();
+        int sum = 0; // Identity value for addition
+        for (MathExpression child : children) {
+            sum += child.getResult();
         }
-        return result;
+        return sum;
     }
 }
 
