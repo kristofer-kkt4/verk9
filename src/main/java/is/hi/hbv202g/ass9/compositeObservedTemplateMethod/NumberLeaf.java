@@ -1,4 +1,4 @@
-package is.hi.hbv202g.ass9.compositeObserved;
+package is.hi.hbv202g.ass9.compositeObservedTemplateMethod;
 public class NumberLeaf extends Observable implements MathExpression {
     private int number;
 

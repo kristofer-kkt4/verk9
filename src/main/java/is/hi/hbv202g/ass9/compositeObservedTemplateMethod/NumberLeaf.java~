@@ -1,4 +1,10 @@
-package is.hi.hbv202g.ass9.compositeObserved;
+package is.hi.hbv202g.ass9.compositeObservedTemplateMethod;
+
+import is.hi.hbv202g.ass9.compositeObserved.MathExpression;
+import is.hi.hbv202g.ass9.compositeObserved.Observable;
+
+//NumberLeaf objects storing an actual number (for simplicity, use int) and return-
+//ing this value when getResult is called
 public class NumberLeaf extends Observable implements MathExpression {
     private int number;
 
