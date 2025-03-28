@@ -1,7 +1,6 @@
 package is.hi.hbv202g.ass9.composite;
-//PlusComposite objects storing an arbitrary amount of mathematical expressions
-//as children that are added together when getResult is called.
-public class PlusComposite {
+
+public class PlusComposite implements MathExpression {
     private MathExpression[] children = new MathExpression[0];
 
     public void add(MathExpression mathExpression) {

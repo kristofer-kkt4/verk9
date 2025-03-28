@@ -1,7 +1,6 @@
 package is.hi.hbv202g.ass9.composite;
-//MultiplyComposite objects storing an arbitrary amount of mathematical expres-
-//sions as children that are multiplied with each other when getResult is called.
-public class MultiplyComposite {
+
+public class MultiplyComposite implements MathExpression{
     private MathExpression[] children = new MathExpression[0];
 
     public void add(MathExpression mathExpression) {
