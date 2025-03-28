@@ -1,4 +1,6 @@
 package is.hi.hbv202g.ass9.composite;
+import java.util.ArrayList;
+import java.util.List;
 //PlusComposite objects storing an arbitrary amount of mathematical expressions
 //as children that are added together when getResult is called.
 public class PlusComposite {
